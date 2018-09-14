@@ -8,7 +8,13 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "clients": {
+      "model": "client",
+      "type": "hasMany",
+      "foreignKey": "personId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

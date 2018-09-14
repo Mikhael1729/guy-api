@@ -1,0 +1,37 @@
+{
+  "name": "client",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "public": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "email": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "string",
+      "required": true
+    },
+    "personId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
